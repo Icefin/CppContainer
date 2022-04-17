@@ -1,14 +1,13 @@
 ﻿#include <iostream>
-#include "nmath.h"
 
 using namespace std;
 
-float x, y, e_a;
+float x, y, e_s;
 
 void Init() {
     cout << "This Code is for Newton-Raphson Method" << '\n';
-    cout << "Enter two initial guesses x, y and criterion error e_a" << '\n';
-    cin >> x >> y >> e_a;
+    cout << "Enter two initial guesses x, y and stopping criterion error e_s" << '\n';
+    cin >> x >> y >> e_s;
 }
 
 void Print(int cnt) {
@@ -27,15 +26,7 @@ int main() {
     float e = 1;
     int iter_cnt = 0;
 
-    mat3 A = { 2, 0, 0,
-        0, 2, 0,
-        0, 0, 2 };
-
-    mat3 B = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-
-    mat3 C = A * B;
-
-    while (e > e_a) {
+    while (e > e_s) {
         iter_cnt++;
         float u = x * x + x * y - 10;
         float v = y + 3 * x * y * y - 57;

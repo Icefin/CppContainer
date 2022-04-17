@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Bisection_Method.cpp" />
     <ClCompile Include="Newton_Raphson.cpp" />
   </ItemGroup>
   <ItemGroup>
