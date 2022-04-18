@@ -140,7 +140,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Bisection_Method.cpp" />
+    <ClCompile Include="False-Position_Method.cpp" />
     <ClCompile Include="Newton_Raphson.cpp" />
+    <ClCompile Include="Secant_Method.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="nmath.h" />

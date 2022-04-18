@@ -1,7 +1,12 @@
-﻿#include <iostream>
+﻿//One of the Open Methods
+
+#include <iostream>
+#include "nmath.h"
 
 using namespace std;
 
+string func_u;
+string func_v;
 float x, y, e_s;
 
 void Init() {
@@ -28,8 +33,8 @@ int main() {
 
     while (e > e_s) {
         iter_cnt++;
-        float u = x * x + x * y - 10;
-        float v = y + 3 * x * y * y - 57;
+        float u = CalculateMultiVariable(func_u, x, y);
+        float v = CalculateMultiVariable(func_v, x, y);
 
         float dudx = 2 * x + y;
         float dudy = x;
