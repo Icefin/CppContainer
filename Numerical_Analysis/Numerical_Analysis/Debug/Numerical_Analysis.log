@@ -1,2 +1,12 @@
-﻿  Newton_Raphson.cpp
-  Numerical_Analysis.vcxproj -> C:\Users\user\source\repos\Algorithm\Numerical_Analysis\Debug\Numerical_Analysis.exe
+﻿  Bisection_Method.cpp
+C:\Users\user\source\repos\Algorithm\Numerical_Analysis\Numerical_Analysis\Bisection_Method.cpp(40,38): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\source\repos\Algorithm\Numerical_Analysis\Numerical_Analysis\Bisection_Method.cpp(43,14): error C2660: 'Print': 함수는 1개의 인수를 사용하지 않습니다.
+C:\Users\user\source\repos\Algorithm\Numerical_Analysis\Numerical_Analysis\Bisection_Method.cpp(16,6): message : 'Print' 선언을 참조하십시오.
+  False-Position_Method.cpp
+  Muller_Method.cpp
+C:\Users\user\source\repos\Algorithm\Numerical_Analysis\Numerical_Analysis\Muller_Method.cpp(31,2): error C2059: 구문 오류: '}'
+  Newton_Raphson.cpp
+C:\Users\user\source\repos\Algorithm\Numerical_Analysis\Numerical_Analysis\Newton_Raphson.cpp(60,19): error C2660: 'Print': 함수는 1개의 인수를 사용하지 않습니다.
+C:\Users\user\source\repos\Algorithm\Numerical_Analysis\Numerical_Analysis\Newton_Raphson.cpp(16,6): message : 'Print' 선언을 참조하십시오.
+  Secant_Method.cpp
+  코드를 생성하고 있습니다...

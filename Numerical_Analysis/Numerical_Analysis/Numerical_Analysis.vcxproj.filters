@@ -32,5 +32,11 @@
     <ClCompile Include="Secant_Method.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Muller_Method.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Bairstow_Method.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

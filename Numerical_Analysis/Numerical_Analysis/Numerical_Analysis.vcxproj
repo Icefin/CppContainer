@@ -139,8 +139,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Bairstow_Method.cpp" />
     <ClCompile Include="Bisection_Method.cpp" />
     <ClCompile Include="False-Position_Method.cpp" />
+    <ClCompile Include="Muller_Method.cpp" />
     <ClCompile Include="Newton_Raphson.cpp" />
     <ClCompile Include="Secant_Method.cpp" />
   </ItemGroup>

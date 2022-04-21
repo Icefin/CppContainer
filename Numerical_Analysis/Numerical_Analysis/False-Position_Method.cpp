@@ -2,6 +2,7 @@
 //We need to select two initial guesses which satisfy f(x1)*f(x2) < 0
 //This Method is quite similar with Bisection_Method
 //This could be faster than Bisection_Method in general case... But Never Guaranteed!!
+//Only applicable for real roots
 
 #include <iostream>
 #include "nmath.h"
@@ -11,8 +12,8 @@ using namespace std;
 string func;
 float x1, x2, e_s, cnt = 0;
 
-void Init() {};
-void Print() {};
+void Init();
+void Print();
 
 int main() {
 	Init();
@@ -45,3 +46,8 @@ int main() {
 
 	Print();
 }
+
+void Init() {};
+void Print() {};
+
+

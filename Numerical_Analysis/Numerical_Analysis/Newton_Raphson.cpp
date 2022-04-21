@@ -1,4 +1,7 @@
 ﻿//One of the Open Methods
+//Only need one initial guess
+//No General Convergence Criterion Exist : ***Convergence is not guaranteed***
+//Only applicable for real roots
 
 #include <iostream>
 #include "nmath.h"
@@ -9,18 +12,8 @@ string func_u;
 string func_v;
 float x, y, e_s;
 
-void Init() {
-    cout << "This Code is for Newton-Raphson Method" << '\n';
-    cout << "Enter two initial guesses x, y and stopping criterion error e_s" << '\n';
-    cin >> x >> y >> e_s;
-}
-
-void Print(int cnt) {
-    cout << '\n'; cout << '\n';
-    cout << "Here are answers and iteration count" << '\n';
-    cout << "x : " << x << " y : " << y << '\n';
-    cout << "Iteration count : " << cnt;
-}
+void Init();
+void Print();
 
 //So far, this code is only for functions
 //u(x, y) = x^2 + xy - 10
@@ -35,6 +28,18 @@ int main() {
         iter_cnt++;
         float u = CalculateMultiVariable(func_u, x, y);
         float v = CalculateMultiVariable(func_v, x, y);
+
+        /*
+        string dudx = DerivateFuncWRTchar(func_u, x);
+        string dudy = DrrivateFuncWRTchar(func_u, y);
+        string dvdx = DerivateFuncWRTchar(func_v, x);
+        string dvdy = DrrivateFuncWRTchar(func_v, y);
+        
+        float val_dudx = CalculateMultiVariable(dudx, x, y);
+        float val_dudy = CalculateMultiVariable(dudy, x, y);
+        float val_dvdx = CalculateMultiVariable(dvdx, x, y);
+        float val_dvdy = CalculateMultiVariable(dvdy, x, y);
+        */
 
         float dudx = 2 * x + y;
         float dudy = x;
@@ -53,4 +58,17 @@ int main() {
     }
 
     Print(iter_cnt);
+}
+
+void Init() {
+    cout << "This Code is for Newton-Raphson Method" << '\n';
+    cout << "Enter two initial guesses x, y and stopping criterion error e_s" << '\n';
+    cin >> x >> y >> e_s;
+}
+
+void Print(int cnt) {
+    cout << '\n'; cout << '\n';
+    cout << "Here are answers and iteration count" << '\n';
+    cout << "x : " << x << " y : " << y << '\n';
+    cout << "Iteration count : " << cnt;
 }
