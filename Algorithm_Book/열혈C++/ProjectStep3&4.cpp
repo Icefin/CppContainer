@@ -1,6 +1,7 @@
-//OOP Project Step #3
+//OOP Project Step #3 & #4
 //Required Function
 //깊은 복사를 원칙으로 복사 생성자를 추가한다.
+//const선언을 추가하여 코드의 안전성을 높인다.
 //Assumptions
 
 #define _CRT_SECURE_NO_WARNINGS
