@@ -1,0 +1,7 @@
+OOP Project Step #8
+Required Function
+BoundCheckPointPtrArray클래스를 본 프로젝트에 맞게 변경시켜 적용한다.
+
+Assumptions
+1. 배열 클래스의 선언과 구현을 위해 AccountArray.h, AccountArray.cpp 을 추가한다. 
+2. Account.h, Account.cpp, AccountHandler.h, BankingCommonDecl.h를 제외한 파일에서 변경을 허용하지 않는다.
